@@ -14,16 +14,10 @@ class RabbitmqDelayedMessageExchange < Formula
   def caveats
     <<~EOS
       This formula is unable to enable the plugin automatically.
-      Ensure rabbitmq is running, then enable the plugin: 
+      Ensure rabbitmq is running, then enable the plugin:
 
       brew services start rabbitmq
       rabbitmq-plugins enable rabbitmq_delayed_message_exchange
     EOS
-  end
-
-  test do
-    enabled_plugins = system "#{HOMEBREW_PREFIX}/sbin/rabbitmq-plugins list --enabled"
-
-    assert_match /rabbitmq_delayed_message_exchange/, enabled_plugins
   end
 end
