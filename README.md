@@ -1,10 +1,10 @@
-# PlayerData Playerdata
+# PlayerData Homebrew Tap
 
 ## How do I install these formulae?
 
-`brew install playerdata/playerdata/<formula>`
+`brew install playerdata/tap/<formula>`
 
-Or `brew tap playerdata/playerdata` and then `brew install <formula>`.
+Or `brew tap playerdata/tap` and then `brew install <formula>`.
 
 ## Documentation
 
