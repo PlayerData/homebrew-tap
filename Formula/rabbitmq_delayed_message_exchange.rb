@@ -11,13 +11,7 @@ class RabbitmqDelayedMessageExchange < Formula
     (share/"rabbitmq/plugins").install "rabbitmq_delayed_message_exchange-3.11.1.ez"
   end
 
-  def caveats
-    <<~EOS
-      This formula is unable to enable the plugin automatically.
-      Ensure rabbitmq is running, then enable the plugin:
-
-      brew services start rabbitmq
-      rabbitmq-plugins enable rabbitmq_delayed_message_exchange
-    EOS
+  def post_install
+    system "rabbitmq-plugins", "enable", "--offline", "rabbitmq_delayed_message_exchange"
   end
 end
