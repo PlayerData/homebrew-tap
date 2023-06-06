@@ -1,8 +1,8 @@
 class RabbitmqDelayedMessageExchange < Formula
   desc "RabbitMQ Delayed Message Plugin"
   homepage "https://github.com/rabbitmq/rabbitmq-delayed-message-exchange"
-  url "https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.11.1/rabbitmq_delayed_message_exchange-3.11.1.ez"
-  sha256 "84d75c95b2cb0905e883fc4a8ce262533ff686e9ad13e8e1969aa4dab1c068d0"
+  url "https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/archive/v3.12.0.tar.gz"
+  sha256 "af58be85af0299fc630d776e7a98400f4805a326e703c04089aa67b214180d87"
   license "MPL-2.0"
 
   depends_on "rabbitmq"
