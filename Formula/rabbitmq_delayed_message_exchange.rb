@@ -8,7 +8,7 @@ class RabbitmqDelayedMessageExchange < Formula
   depends_on "rabbitmq"
 
   def install
-    (share/"rabbitmq/plugins").install "rabbitmq_delayed_message_exchange-3.11.1.ez"
+    (share/"rabbitmq/plugins").install "rabbitmq_delayed_message_exchange-3.12.0.ez"
   end
 
   def post_install
